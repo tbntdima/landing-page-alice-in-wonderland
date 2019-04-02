@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/alice-in-wonderlan/precache-manifest.485d453b6db94704de38ea6ba42e9d1b.js"
+  "/alice-in-wonderlan/precache-manifest.e080fdab6242b635b1fe7df3c15c1b5e.js"
 );
 
 workbox.clientsClaim();

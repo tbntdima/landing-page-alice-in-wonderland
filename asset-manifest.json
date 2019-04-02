@@ -1,14 +1,15 @@
 {
-  "main.css": "/alice-in-wonderlan/static/css/main.ad9a1cf9.chunk.css",
-  "main.js": "/alice-in-wonderlan/static/js/main.fab1efca.chunk.js",
-  "main.js.map": "/alice-in-wonderlan/static/js/main.fab1efca.chunk.js.map",
+  "main.css": "/alice-in-wonderlan/static/css/main.cd7ef9ed.chunk.css",
+  "main.js": "/alice-in-wonderlan/static/js/main.1bb24ae7.chunk.js",
+  "main.js.map": "/alice-in-wonderlan/static/js/main.1bb24ae7.chunk.js.map",
   "runtime~main.js": "/alice-in-wonderlan/static/js/runtime~main.fa304152.js",
   "runtime~main.js.map": "/alice-in-wonderlan/static/js/runtime~main.fa304152.js.map",
-  "static/js/2.f78c003c.chunk.js": "/alice-in-wonderlan/static/js/2.f78c003c.chunk.js",
-  "static/js/2.f78c003c.chunk.js.map": "/alice-in-wonderlan/static/js/2.f78c003c.chunk.js.map",
+  "static/js/2.2b567a4f.chunk.js": "/alice-in-wonderlan/static/js/2.2b567a4f.chunk.js",
+  "static/js/2.2b567a4f.chunk.js.map": "/alice-in-wonderlan/static/js/2.2b567a4f.chunk.js.map",
   "index.html": "/alice-in-wonderlan/index.html",
-  "precache-manifest.485d453b6db94704de38ea6ba42e9d1b.js": "/alice-in-wonderlan/precache-manifest.485d453b6db94704de38ea6ba42e9d1b.js",
+  "precache-manifest.e080fdab6242b635b1fe7df3c15c1b5e.js": "/alice-in-wonderlan/precache-manifest.e080fdab6242b635b1fe7df3c15c1b5e.js",
   "service-worker.js": "/alice-in-wonderlan/service-worker.js",
-  "static/css/main.ad9a1cf9.chunk.css.map": "/alice-in-wonderlan/static/css/main.ad9a1cf9.chunk.css.map",
-  "static/media/index.scss": "/alice-in-wonderlan/static/media/background.dbb08e8d.jpg"
+  "static/css/main.cd7ef9ed.chunk.css.map": "/alice-in-wonderlan/static/css/main.cd7ef9ed.chunk.css.map",
+  "static/media/back.png": "/alice-in-wonderlan/static/media/back.044725b3.png",
+  "static/media/front.jpg": "/alice-in-wonderlan/static/media/front.dbb08e8d.jpg"
 }
