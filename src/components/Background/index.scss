@@ -1,3 +1,9 @@
+// config
+$background-image-path: './images/background.jpg';
+$background-image-color: #000;
+$background-image-height: 631px;
+$background-slide-time: 10s;
+
 .background {
   position: absolute;
   z-index: -1;
@@ -6,11 +12,11 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  // background-color: blue;
-  background-image: url('./images/background.jpg');
+  background-color: $background-image-color;
+  background-image: url($background-image-path);
   background-position: 50% 0px;
   background-repeat: repeat-y;
-  animation: background-slide 3s linear infinite;
+  animation: background-slide $background-slide-time linear infinite;
 }
 
 @keyframes background-slide {
@@ -18,6 +24,6 @@
     background-position: 50% 0px;
   }
   100% {
-    background-position: 50% -631px;
+    background-position: 50% -1 * $background-image-height;
   }
 }
