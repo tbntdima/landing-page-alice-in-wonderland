@@ -24,14 +24,14 @@ class Homepage extends Component {
           image={frontImage}
           imageHeight={631}
           animationDirection="top"
-          animationDuration={2}
+          animationDuration={0}
           zIndex={-1}
         />
         <Background
           image={backImage}
           imageHeight={1638}
           animationDirection="bottom"
-          animationDuration={5}
+          animationDuration={0}
           zIndex={-2}
         />
       </div>
