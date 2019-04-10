@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/alice-in-wonderlan/static/js/runtime~main.fa304152.js"
   },
   {
-    "revision": "c3d9daa2c40bc97fa982",
-    "url": "/alice-in-wonderlan/static/js/main.34e479a4.chunk.js"
+    "revision": "431c8a5daf759262fdd6",
+    "url": "/alice-in-wonderlan/static/js/main.5dcff634.chunk.js"
   },
   {
-    "revision": "c160f77f4a8ffb4673be",
-    "url": "/alice-in-wonderlan/static/js/2.bf9aa58b.chunk.js"
+    "revision": "0855c16129aee189e262",
+    "url": "/alice-in-wonderlan/static/js/2.2f051110.chunk.js"
   },
   {
-    "revision": "c3d9daa2c40bc97fa982",
+    "revision": "431c8a5daf759262fdd6",
     "url": "/alice-in-wonderlan/static/css/main.24df1aeb.chunk.css"
   },
   {
-    "revision": "03f8cb20911b94bb5863853f54137bbb",
+    "revision": "fff8b41dd11b08900d8002c3745b7eab",
     "url": "/alice-in-wonderlan/index.html"
   }
 ];
