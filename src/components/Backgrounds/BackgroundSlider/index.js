@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BackgroundWrapper from './BackgroundWrapper';
+import BackgroundWrapper from '../BackgroundWrapper';
 import BackgroundSlidingImage from './BackgroundSlidingImage';
 
-const Background = ({
+export const BackgroundSlider = ({
   image,
   imageHeight,
   animationDuration = 10,
@@ -20,12 +20,10 @@ const Background = ({
   </BackgroundWrapper>
 );
 
-Background.propTypes = {
+BackgroundSlider.propTypes = {
   image: PropTypes.string.isRequired,
   imageHeight: PropTypes.number.isRequired,
   animationDuration: PropTypes.number,
   zIndex: PropTypes.number,
   animationDirection: PropTypes.string
 };
-
-export default Background;
