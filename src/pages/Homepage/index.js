@@ -56,10 +56,14 @@ class Homepage extends Component {
             </Col>
           </Row>
         </Container>
+
+        {/* Modals */}
         <MyVerticallyCenteredModal
           show={this.state.modalShow}
           onHide={this.modalClose}
         />
+
+        {/* Backgrounds */}
         <BackgroundSlider
           image={frontImage}
           imageHeight={631}
