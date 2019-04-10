@@ -83,6 +83,7 @@ class Homepage extends Component {
           animationDirection="top"
           animationDuration={0}
           zIndex={-3}
+          backgroundColor="orange"
         />
       </div>
     );

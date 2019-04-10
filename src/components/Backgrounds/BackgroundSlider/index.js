@@ -7,10 +7,11 @@ export const BackgroundSlider = ({
   image,
   imageHeight,
   animationDuration = 10,
+  animationDirection = 'top',
   zIndex = -1,
-  animationDirection = 'top'
+  backgroundColor = 'transparent'
 }) => (
-  <BackgroundWrapper zIndex={zIndex}>
+  <BackgroundWrapper zIndex={zIndex} backgroundColor={backgroundColor}>
     <BackgroundSlidingImage
       image={image}
       imageHeight={imageHeight}
@@ -24,6 +25,7 @@ BackgroundSlider.propTypes = {
   image: PropTypes.string.isRequired,
   imageHeight: PropTypes.number.isRequired,
   animationDuration: PropTypes.number,
+  animationDirection: PropTypes.string,
   zIndex: PropTypes.number,
-  animationDirection: PropTypes.string
+  backgroundColor: PropTypes.string
 };
