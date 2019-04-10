@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button, Modal } from 'react-bootstrap';
 import {
   BackgroundSlider,
   BackgroundFilter
@@ -8,39 +8,76 @@ import frontImage from '../../images/backgrounds/front.jpg';
 import backImage from '../../images/backgrounds/back.png';
 import './index.scss';
 
+class MyVerticallyCenteredModal extends React.Component {
+  render() {
+    return (
+      <Modal
+        {...this.props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Modal heading
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Centered Modal</h4>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+            ac consectetur ac, vestibulum at eros.
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={this.props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+}
+
 class Homepage extends Component {
+  state = {
+    modalShow: false
+  };
+
+  modalShow = () => this.setState({ modalShow: true });
+  modalClose = () => this.setState({ modalShow: false });
+
   render() {
     return (
       <div className="homepage">
         <Container className="homepage__content">
           <Row>
-            <Col>1 of 2</Col>
-            <Col>2 of 2</Col>
-          </Row>
-          <Row>
-            <Col>1 of 3</Col>
-            <Col>2 of 3</Col>
-            <Col>3 of 3</Col>
+            <Col>
+              <Button onClick={this.modalShow}>Launch modal</Button>
+            </Col>
           </Row>
         </Container>
+        <MyVerticallyCenteredModal
+          show={this.state.modalShow}
+          onHide={this.modalClose}
+        />
         <BackgroundSlider
           image={frontImage}
           imageHeight={631}
           animationDirection="top"
-          animationDuration={10}
+          animationDuration={0}
           zIndex={-1}
         />
         <BackgroundFilter
           opacity={0.65}
-          colors={['red', 'green', 'blue', 'orange']}
-          animationDuration={1}
+          colors={['purple', 'green', 'blue', 'orange']}
+          animationDuration={0}
           zIndex={-2}
         />
         <BackgroundSlider
           image={backImage}
           imageHeight={1638}
-          animationDirection="bottom"
-          animationDuration={10}
+          animationDirection="top"
+          animationDuration={0}
           zIndex={-3}
         />
       </div>
