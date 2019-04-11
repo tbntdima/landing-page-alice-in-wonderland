@@ -1,42 +1,23 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Button, Modal } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import Character from '../../components/Character';
 import {
   BackgroundSlider,
   BackgroundFilter
 } from '../../components/Backgrounds/';
+import CouponModal from '../../components/CouponModal';
 import frontImage from '../../images/backgrounds/front.jpg';
 import backImage from '../../images/backgrounds/back.png';
 import './index.scss';
 
-class MyVerticallyCenteredModal extends React.Component {
-  render() {
-    return (
-      <Modal
-        {...this.props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros.
-          </p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={this.props.onHide}>Close</Button>
-        </Modal.Footer>
-      </Modal>
-    );
-  }
-}
+const getRandomInt = (min, max) => {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+  // random positive or negative
+  const result = Math.random() < 0.5 ? -1 * randomNumber : randomNumber;
+  return result;
+};
 
 class Homepage extends Component {
   state = {
@@ -52,39 +33,72 @@ class Homepage extends Component {
         <Container className="homepage__content">
           <Row>
             <Col>
-              <Button onClick={this.modalShow}>Launch modal</Button>
+              <button onClick={this.modalShow}>Launch modal</button>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Character
+                translateX={getRandomInt(10, 30)}
+                translateY={getRandomInt(20, 30)}
+                rotateZ={getRandomInt(0, 15)}
+              />
+              <Character
+                translateX={getRandomInt(10, 30)}
+                translateY={getRandomInt(25, 40)}
+                rotateZ={getRandomInt(0, 15)}
+              />
+              <Character
+                translateX={getRandomInt(10, 30)}
+                translateY={getRandomInt(17, 32)}
+                rotateZ={getRandomInt(0, 15)}
+              />
+              <Character
+                translateX={getRandomInt(10, 30)}
+                translateY={getRandomInt(0, 40)}
+                rotateZ={getRandomInt(0, 15)}
+              />
+              <Character
+                translateX={getRandomInt(10, 30)}
+                translateY={getRandomInt(5, 20)}
+                rotateZ={getRandomInt(0, 15)}
+              />
             </Col>
           </Row>
         </Container>
 
         {/* Backgrounds */}
+        {/* <BackgroundFilter
+          opacity={0.65}
+          colors={['purple', 'green', 'blue', 'orange']}
+          animationDuration={0}
+          backgroundColor="white"
+          zIndex={-1}
+        />
         <BackgroundSlider
           image={frontImage}
           imageHeight={631}
           animationDirection="top"
-          animationDuration={0}
-          zIndex={-1}
-        />
+          animationDuration={10}
+          zIndex={-2}
+        /> */}
         <BackgroundFilter
           opacity={0.65}
           colors={['purple', 'green', 'blue', 'orange']}
-          animationDuration={0}
-          zIndex={-2}
+          animationDuration={10}
+          zIndex={-3}
         />
         <BackgroundSlider
           image={backImage}
           imageHeight={1638}
           animationDirection="top"
-          animationDuration={0}
-          zIndex={-3}
+          animationDuration={2}
+          zIndex={-4}
           backgroundColor=""
         />
 
         {/* Modals */}
-        <MyVerticallyCenteredModal
-          show={this.state.modalShow}
-          onHide={this.modalClose}
-        />
+        <CouponModal show={this.state.modalShow} onHide={this.modalClose} />
       </div>
     );
   }
