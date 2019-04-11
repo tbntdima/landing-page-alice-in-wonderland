@@ -57,12 +57,6 @@ class Homepage extends Component {
           </Row>
         </Container>
 
-        {/* Modals */}
-        <MyVerticallyCenteredModal
-          show={this.state.modalShow}
-          onHide={this.modalClose}
-        />
-
         {/* Backgrounds */}
         <BackgroundSlider
           image={frontImage}
@@ -83,7 +77,13 @@ class Homepage extends Component {
           animationDirection="top"
           animationDuration={0}
           zIndex={-3}
-          backgroundColor="orange"
+          backgroundColor=""
+        />
+
+        {/* Modals */}
+        <MyVerticallyCenteredModal
+          show={this.state.modalShow}
+          onHide={this.modalClose}
         />
       </div>
     );
