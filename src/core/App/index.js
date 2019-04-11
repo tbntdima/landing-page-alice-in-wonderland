@@ -1,11 +1,15 @@
 import React from 'react';
-import Homepage from '../../pages/Homepage/';
 import { Preloader, Placeholder } from 'react-preloading-screen';
+import 'react-preloading-screen/raf-polyfill';
+import Homepage from '../../pages/Homepage/';
+import Loadingpage from '../../pages/Loadingpage';
 
 const App = () => (
-  <Preloader>
+  <Preloader fadeDuration={300} style={{ transition: '300ms' }}>
     <Homepage />
-    <Placeholder>Loading</Placeholder>
+    <Placeholder>
+      <Loadingpage />
+    </Placeholder>
   </Preloader>
 );
 
