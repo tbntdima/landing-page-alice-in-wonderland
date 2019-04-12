@@ -6,7 +6,6 @@ import {
   BackgroundFilter
 } from '../../components/Backgrounds/';
 import CouponModal from '../../components/CouponModal';
-import frontImage from '../../images/backgrounds/front.jpg';
 import backImage from '../../images/backgrounds/back.png';
 import './index.scss';
 
@@ -66,22 +65,7 @@ class Homepage extends Component {
             </Col>
           </Row>
         </Container>
-
-        {/* Backgrounds */}
-        {/* <BackgroundFilter
-          opacity={0.65}
-          colors={['purple', 'green', 'blue', 'orange']}
-          animationDuration={0}
-          backgroundColor="white"
-          zIndex={-1}
-        />
-        <BackgroundSlider
-          image={frontImage}
-          imageHeight={631}
-          animationDirection="top"
-          animationDuration={10}
-          zIndex={-2}
-        /> */}
+        {/* Backgrounds */} */}
         <BackgroundFilter
           opacity={0.65}
           colors={['purple', 'green', 'blue', 'orange']}
@@ -92,11 +76,10 @@ class Homepage extends Component {
           image={backImage}
           imageHeight={1638}
           animationDirection="top"
-          animationDuration={2}
+          animationDuration={10}
           zIndex={-4}
           backgroundColor=""
         />
-
         {/* Modals */}
         <CouponModal show={this.state.modalShow} onHide={this.modalClose} />
       </div>
