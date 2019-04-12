@@ -20,19 +20,19 @@ self.__precacheManifest = [
     "url": "/alice-in-wonderland/static/js/runtime~main.503df334.js"
   },
   {
-    "revision": "2c6cf655aef0fe4b111c",
-    "url": "/alice-in-wonderland/static/js/main.227a8706.chunk.js"
+    "revision": "368966fa414e3d52fd62",
+    "url": "/alice-in-wonderland/static/js/main.b7fefba3.chunk.js"
   },
   {
     "revision": "0e540ca08f1a84b0cc7f",
     "url": "/alice-in-wonderland/static/js/2.8573b7ac.chunk.js"
   },
   {
-    "revision": "2c6cf655aef0fe4b111c",
+    "revision": "368966fa414e3d52fd62",
     "url": "/alice-in-wonderland/static/css/main.efaa4a9f.chunk.css"
   },
   {
-    "revision": "7c9dc2cf10d81ae17a56c4d00b057476",
+    "revision": "72071845013b9eaceb452885386cd2e5",
     "url": "/alice-in-wonderland/index.html"
   }
 ];
