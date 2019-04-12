@@ -1,16 +1,17 @@
 {
-  "main.css": "/alice-in-wonderland/static/css/main.efaa4a9f.chunk.css",
-  "main.js": "/alice-in-wonderland/static/js/main.d4f109ba.chunk.js",
-  "main.js.map": "/alice-in-wonderland/static/js/main.d4f109ba.chunk.js.map",
+  "main.css": "/alice-in-wonderland/static/css/main.3f3e7685.chunk.css",
+  "main.js": "/alice-in-wonderland/static/js/main.f5ca06a1.chunk.js",
+  "main.js.map": "/alice-in-wonderland/static/js/main.f5ca06a1.chunk.js.map",
   "runtime~main.js": "/alice-in-wonderland/static/js/runtime~main.503df334.js",
   "runtime~main.js.map": "/alice-in-wonderland/static/js/runtime~main.503df334.js.map",
-  "static/js/2.ea03e942.chunk.js": "/alice-in-wonderland/static/js/2.ea03e942.chunk.js",
-  "static/js/2.ea03e942.chunk.js.map": "/alice-in-wonderland/static/js/2.ea03e942.chunk.js.map",
+  "static/js/2.988aa79d.chunk.js": "/alice-in-wonderland/static/js/2.988aa79d.chunk.js",
+  "static/js/2.988aa79d.chunk.js.map": "/alice-in-wonderland/static/js/2.988aa79d.chunk.js.map",
   "index.html": "/alice-in-wonderland/index.html",
-  "precache-manifest.54899b79deef650164cb40f1174c9b6d.js": "/alice-in-wonderland/precache-manifest.54899b79deef650164cb40f1174c9b6d.js",
+  "precache-manifest.24f5803a4b3af92ffecb36177ac0c5ff.js": "/alice-in-wonderland/precache-manifest.24f5803a4b3af92ffecb36177ac0c5ff.js",
   "service-worker.js": "/alice-in-wonderland/service-worker.js",
-  "static/css/main.efaa4a9f.chunk.css.map": "/alice-in-wonderland/static/css/main.efaa4a9f.chunk.css.map",
-  "static/media/alice.png": "/alice-in-wonderland/static/media/alice.d5ec5321.png",
-  "static/media/back.png": "/alice-in-wonderland/static/media/back.044725b3.png",
-  "static/media/logo.8e6b1ed6.svg": "/alice-in-wonderland/static/media/logo.8e6b1ed6.svg"
+  "static/css/main.3f3e7685.chunk.css.map": "/alice-in-wonderland/static/css/main.3f3e7685.chunk.css.map",
+  "static/media/alice.svg": "/alice-in-wonderland/static/media/alice.35ff18d4.svg",
+  "static/media/backgroundImage.jpg": "/alice-in-wonderland/static/media/backgroundImage.0354a8c4.jpg",
+  "static/media/logo.8e6b1ed6.svg": "/alice-in-wonderland/static/media/logo.8e6b1ed6.svg",
+  "static/media/qween.svg": "/alice-in-wonderland/static/media/qween.61e9a8b1.svg"
 }
