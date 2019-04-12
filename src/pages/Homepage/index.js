@@ -42,6 +42,12 @@ class Homepage extends Component {
     return (
       <Consumer>
         {({ characters }) => {
+          const whiteRabbit = characters[0];
+          const caterpillar = characters[1];
+          const madHatter = characters[2];
+          const alice = characters[3];
+          const cheshireCat = characters[4];
+          const queenOfHearts = characters[5];
           return (
             <div className="homepage">
               <Container className="homepage__content">
@@ -51,18 +57,91 @@ class Homepage extends Component {
                   </Col>
                 </Row>
                 <Row>
-                  <Col style={{ textAlign: 'center' }}>
-                    {characters.map(character => (
-                      <Character
-                        onClick={this.modalShow}
-                        name={character.name}
-                        image={character.image}
-                        translateX={getRandomInt(10, 30)}
-                        translateY={getRandomInt(20, 30)}
-                        rotateZ={getRandomInt(0, 15)}
-                        animationDuration={6}
-                      />
-                    ))}
+                  <Col
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between'
+                    }}
+                  >
+                    <Row>
+                      <Col style={{ maxWidth: '300px' }}>
+                        <Character
+                          onClick={this.modalShow}
+                          name={queenOfHearts.name}
+                          image={queenOfHearts.image}
+                          translateX={getRandomInt(10, 30)}
+                          translateY={getRandomInt(20, 30)}
+                          rotateZ={getRandomInt(0, 15)}
+                          // animationDuration={6}
+                        />
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col style={{ maxWidth: '300px' }}>
+                        <Character
+                          onClick={this.modalShow}
+                          name={cheshireCat.name}
+                          image={cheshireCat.image}
+                          translateX={getRandomInt(10, 30)}
+                          translateY={getRandomInt(20, 30)}
+                          rotateZ={getRandomInt(0, 15)}
+                          // animationDuration={6}
+                        />
+                      </Col>
+                    </Row>
+                  </Col>
+                  <Col>
+                    <Character
+                      onClick={this.modalShow}
+                      name={alice.name}
+                      image={alice.image}
+                      translateX={getRandomInt(10, 30)}
+                      translateY={getRandomInt(20, 30)}
+                      rotateZ={getRandomInt(0, 15)}
+                      // animationDuration={6}
+                    />
+                  </Col>
+                  <Col>
+                    <Row>
+                      <Col style={{ maxWidth: '300px' }}>
+                        <Character
+                          onClick={this.modalShow}
+                          name={madHatter.name}
+                          image={madHatter.image}
+                          translateX={getRandomInt(10, 30)}
+                          translateY={getRandomInt(20, 30)}
+                          rotateZ={getRandomInt(0, 15)}
+                          // animationDuration={6}
+                        />
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col style={{ maxWidth: '200px' }}>
+                        <Character
+                          onClick={this.modalShow}
+                          name={caterpillar.name}
+                          image={caterpillar.image}
+                          translateX={getRandomInt(10, 30)}
+                          translateY={getRandomInt(20, 30)}
+                          rotateZ={getRandomInt(0, 15)}
+                          // animationDuration={6}
+                        />
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col style={{ maxWidth: '200px' }}>
+                        <Character
+                          onClick={this.modalShow}
+                          name={whiteRabbit.name}
+                          image={whiteRabbit.image}
+                          translateX={getRandomInt(10, 30)}
+                          translateY={getRandomInt(20, 30)}
+                          rotateZ={getRandomInt(0, 15)}
+                          // animationDuration={6}
+                        />
+                      </Col>
+                    </Row>
                   </Col>
                 </Row>
               </Container>
@@ -81,28 +160,28 @@ class Homepage extends Component {
                   'orange',
                   'pink'
                 ]}
-                animationDuration={30}
+                // animationDuration={30}
                 zIndex={-3}
               />
               <BackgroundSlider
                 image={cardsBacground}
                 imageHeight={887}
                 animationDirection="top"
-                animationDuration={5}
+                // animationDuration={5}
                 zIndex={-4}
               />
               <BackgroundSlider
                 image={thingsBackground}
                 imageHeight={992}
                 animationDirection="top"
-                animationDuration={8}
+                // animationDuration={8}
                 zIndex={-5}
               />
               <BackgroundSlider
                 image={mainBackground}
                 imageHeight={1164}
                 animationDirection="top"
-                animationDuration={15}
+                // animationDuration={15}
                 zIndex={-6}
                 backgroundColor="#111530"
               />

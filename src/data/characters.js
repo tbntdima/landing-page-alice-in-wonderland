@@ -1,7 +1,7 @@
 import whiteRabbit from '../images/characters/whiteRabbit.png';
 import caterpillar from '../images/characters/caterpillar.png';
 import madHatter from '../images/characters/madHatter.png';
-import aliceImage from '../images/characters/alice.png';
+import alice from '../images/characters/alice.png';
 import cheshireCat from '../images/characters/cheshireCat.png';
 import queenOfHearts from '../images/characters/queenOfHearts.png';
 
@@ -33,7 +33,7 @@ const characters = [
   {
     id: 3,
     name: 'Alice',
-    image: aliceImage,
+    image: alice,
     bonus: '',
     couponCode: '',
     deposit: ''
