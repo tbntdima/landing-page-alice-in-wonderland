@@ -4,10 +4,6 @@ self.__precacheManifest = [
     "url": "/alice-in-wonderlan/static/media/logo.8e6b1ed6.svg"
   },
   {
-    "revision": "dbb08e8df5494094671955ad42f4f980",
-    "url": "/alice-in-wonderlan/static/media/front.dbb08e8d.jpg"
-  },
-  {
     "revision": "044725b3ce2f93d3be7a8512655b2e58",
     "url": "/alice-in-wonderlan/static/media/back.044725b3.png"
   },
@@ -20,19 +16,19 @@ self.__precacheManifest = [
     "url": "/alice-in-wonderlan/static/js/runtime~main.fa304152.js"
   },
   {
-    "revision": "97a2924135aa6b6afd0c",
-    "url": "/alice-in-wonderlan/static/js/main.649daa8c.chunk.js"
+    "revision": "ce6ec8a33a844672beb5",
+    "url": "/alice-in-wonderlan/static/js/main.40f862c3.chunk.js"
   },
   {
-    "revision": "b6bccdd3d64306a62eb3",
-    "url": "/alice-in-wonderlan/static/js/2.0e727db1.chunk.js"
+    "revision": "bebb8a1689034a5c2c40",
+    "url": "/alice-in-wonderlan/static/js/2.dd91cbc7.chunk.js"
   },
   {
-    "revision": "97a2924135aa6b6afd0c",
+    "revision": "ce6ec8a33a844672beb5",
     "url": "/alice-in-wonderlan/static/css/main.efaa4a9f.chunk.css"
   },
   {
-    "revision": "42bd887ab5e602017fdfcbe33ecb3b03",
+    "revision": "4b80db7d2fb43036b198be752b6eb3fb",
     "url": "/alice-in-wonderlan/index.html"
   }
 ];
