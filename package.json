@@ -1,7 +1,7 @@
 {
   "name": "alice-in-wonderland",
   "version": "0.1.0",
-  "homepage": "http://dmitriyaa.github.io/alice-in-wonderlan",
+  "homepage": "http://dmitriyaa.github.io/alice-in-wonderland",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
