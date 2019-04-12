@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/alice-in-wonderlan/precache-manifest.dcf6e37b196e95354154e970d8f4652a.js"
+  "/alice-in-wonderland/precache-manifest.a8dd60654f7686ff76b81bfe819090ac.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/alice-in-wonderlan/index.html", {
+workbox.routing.registerNavigationRoute("/alice-in-wonderland/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
