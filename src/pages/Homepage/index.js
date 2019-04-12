@@ -6,7 +6,7 @@ import {
   BackgroundFilter
 } from '../../components/Backgrounds/';
 import CouponModal from '../../components/CouponModal';
-import backImage from '../../images/backgrounds/back.png';
+import backgroundImage from '../../images/backgrounds/backgroundImage.jpg';
 import './index.scss';
 
 const getRandomInt = (min, max) => {
@@ -67,18 +67,29 @@ class Homepage extends Component {
         </Container>
         {/* Backgrounds */} */}
         <BackgroundFilter
-          opacity={0.65}
-          colors={['purple', 'green', 'blue', 'orange']}
-          animationDuration={10}
+          opacity={0.2}
+          colors={[
+            'black',
+            'yellow',
+            'red',
+            'purple',
+            'blue',
+            'yellow',
+            'transparent',
+            'purple',
+            'orange',
+            'pink'
+          ]}
+          animationDuration={30}
           zIndex={-3}
         />
         <BackgroundSlider
-          image={backImage}
-          imageHeight={1638}
+          image={backgroundImage}
+          imageHeight={1164}
           animationDirection="top"
-          animationDuration={10}
+          animationDuration={5}
           zIndex={-4}
-          backgroundColor=""
+          backgroundColor="#111530"
         />
         {/* Modals */}
         <CouponModal show={this.state.modalShow} onHide={this.modalClose} />
