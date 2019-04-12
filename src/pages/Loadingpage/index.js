@@ -5,7 +5,7 @@ import { ReactComponent as Logo } from '../../images/logo.svg';
 const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  background: red;
+  background: #111530;
   display: flex;
   justify-content: center;
   align-items: center;

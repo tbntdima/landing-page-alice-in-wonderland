@@ -6,7 +6,7 @@ import BackgroundSlidingImage from './BackgroundSlidingImage';
 export const BackgroundSlider = ({
   image,
   imageHeight,
-  animationDuration = 10,
+  animationDuration = 0,
   animationDirection = 'top',
   zIndex = -1,
   backgroundColor = 'transparent'

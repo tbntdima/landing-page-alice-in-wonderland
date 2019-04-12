@@ -6,7 +6,7 @@ import Filter from './Filter';
 export const BackgroundFilter = ({
   opacity = 0.5,
   colors,
-  animationDuration = 10,
+  animationDuration = 0,
   zIndex = -1,
   backgroundColor = 'transparent'
 }) => (

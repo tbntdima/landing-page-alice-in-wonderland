@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import alice from '../../images/characters/alice.png';
 
 const floating = ({ translateX, translateY, rotateZ }) => {
   return keyframes`
@@ -23,17 +22,29 @@ const floating = ({ translateX, translateY, rotateZ }) => {
 const FloatingWrapper = styled.div`
   display: inline-block;
   transform-origin: bottom center;
-  animation: ${props => floating} 6s linear infinite;
+  animation: ${props => floating} ${props => props.animationDuration}s linear
+    infinite;
+  cursor: pointer;
 `;
 
-const Character = ({ translateX, translateY, rotateZ }) => {
+const Character = ({
+  name,
+  image,
+  animationDuration = 0,
+  translateX,
+  translateY,
+  rotateZ,
+  onClick
+}) => {
   return (
     <FloatingWrapper
       translateX={translateX}
       translateY={translateY}
       rotateZ={rotateZ}
+      animationDuration={animationDuration}
+      onClick={onClick}
     >
-      <img src={alice} alt="Alice" />
+      <img src={image} alt={name} />
     </FloatingWrapper>
   );
 };
