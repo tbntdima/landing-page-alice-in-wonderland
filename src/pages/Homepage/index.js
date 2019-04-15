@@ -7,16 +7,14 @@ import { Consumer } from '../../context/AppContext';
 
 // Components
 import Character from '../../components/Character';
-import {
-  BackgroundSlider,
-  BackgroundFilter
-} from '../../components/Backgrounds/';
 import CouponModal from '../../components/CouponModal';
 
+// Layout
+import Background from './Background';
+
 // Images
-import mainBackground from '../../images/backgrounds/mainBackground.jpg';
-import cardsBacground from '../../images/backgrounds/cardsBackground.png';
-import thingsBackground from '../../images/backgrounds/thingsBackground.png';
+import casinoLogo from '../../images/logo.svg';
+import wonderlandLogo from '../../images/wonderland-logo.png';
 
 // Styles
 import './index.scss';
@@ -51,21 +49,11 @@ class Homepage extends Component {
           return (
             <div className="homepage">
               <Container className="homepage__content">
-                <Row>
-                  <Col>
-                    <button onClick={this.modalShow}>Launch modal</button>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col
-                    style={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      justifyContent: 'space-between'
-                    }}
-                  >
-                    <Row>
-                      <Col style={{ maxWidth: '300px' }}>
+                <Row className="flex-column flex-md-row">
+                  {/* Left column start */}
+                  <Col className="d-flex flex-column order-1 order-md-0">
+                    <Row className="flex-grow-1 mt-3 mt-md-0">
+                      <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--big">
                         <Character
                           onClick={this.modalShow}
                           name={queenOfHearts.name}
@@ -73,12 +61,12 @@ class Homepage extends Component {
                           translateX={getRandomInt(10, 30)}
                           translateY={getRandomInt(20, 30)}
                           rotateZ={getRandomInt(0, 15)}
-                          // animationDuration={6}
+                          animationDuration={6}
                         />
                       </Col>
                     </Row>
-                    <Row>
-                      <Col style={{ maxWidth: '300px' }}>
+                    <Row className="flex-grow-1 mt-3 mt-md-0">
+                      <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--big">
                         <Character
                           onClick={this.modalShow}
                           name={cheshireCat.name}
@@ -86,25 +74,60 @@ class Homepage extends Component {
                           translateX={getRandomInt(10, 30)}
                           translateY={getRandomInt(20, 30)}
                           rotateZ={getRandomInt(0, 15)}
-                          // animationDuration={6}
+                          animationDuration={6}
                         />
                       </Col>
                     </Row>
                   </Col>
-                  <Col>
-                    <Character
-                      onClick={this.modalShow}
-                      name={alice.name}
-                      image={alice.image}
-                      translateX={getRandomInt(10, 30)}
-                      translateY={getRandomInt(20, 30)}
-                      rotateZ={getRandomInt(0, 15)}
-                      // animationDuration={6}
-                    />
-                  </Col>
-                  <Col>
+                  {/* Left column end */}
+
+                  {/* Center column start */}
+                  <Col className="d-flex flex-column order-0 order-md-1">
+                    <Row className="flex-grow-1">
+                      <Col className="d-flex flex-column justify-content-center align-items-center">
+                        <a
+                          className="mb-2"
+                          href="https://www.silveroakcasino.com/"
+                        >
+                          <img
+                            src={casinoLogo}
+                            alt="Silver Oak"
+                            style={{
+                              width: '100%',
+                              maxWidth: '200px'
+                            }}
+                          />
+                        </a>
+                        <img src={wonderlandLogo} alt="Alice in wonderland" />
+                      </Col>
+                    </Row>
                     <Row>
-                      <Col style={{ maxWidth: '300px' }}>
+                      <Col>
+                        <p className="text-white text-center">
+                          Click on a character to revea your Bonus.
+                        </p>
+                      </Col>
+                    </Row>
+                    <Row className="flex-grow-1">
+                      <Col className="d-flex justify-content-center">
+                        <Character
+                          onClick={this.modalShow}
+                          name={alice.name}
+                          image={alice.image}
+                          translateX={getRandomInt(10, 30)}
+                          translateY={getRandomInt(20, 30)}
+                          rotateZ={getRandomInt(0, 15)}
+                          animationDuration={6}
+                        />
+                      </Col>
+                    </Row>
+                  </Col>
+                  {/* Center column end */}
+
+                  {/* Right column start */}
+                  <Col className="d-flex flex-column justify-content-between order-2">
+                    <Row className="justify-content-center mt-3 mt-md-5">
+                      <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--big">
                         <Character
                           onClick={this.modalShow}
                           name={madHatter.name}
@@ -112,12 +135,12 @@ class Homepage extends Component {
                           translateX={getRandomInt(10, 30)}
                           translateY={getRandomInt(20, 30)}
                           rotateZ={getRandomInt(0, 15)}
-                          // animationDuration={6}
+                          animationDuration={6}
                         />
                       </Col>
                     </Row>
-                    <Row>
-                      <Col style={{ maxWidth: '200px' }}>
+                    <Row className="justify-content-end mt-3 mt-md-5">
+                      <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--small">
                         <Character
                           onClick={this.modalShow}
                           name={caterpillar.name}
@@ -125,12 +148,12 @@ class Homepage extends Component {
                           translateX={getRandomInt(10, 30)}
                           translateY={getRandomInt(20, 30)}
                           rotateZ={getRandomInt(0, 15)}
-                          // animationDuration={6}
+                          animationDuration={6}
                         />
                       </Col>
                     </Row>
-                    <Row>
-                      <Col style={{ maxWidth: '200px' }}>
+                    <Row className="justify-content-center mt-3 mt-md-5">
+                      <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--small">
                         <Character
                           onClick={this.modalShow}
                           name={whiteRabbit.name}
@@ -138,54 +161,17 @@ class Homepage extends Component {
                           translateX={getRandomInt(10, 30)}
                           translateY={getRandomInt(20, 30)}
                           rotateZ={getRandomInt(0, 15)}
-                          // animationDuration={6}
+                          animationDuration={6}
                         />
                       </Col>
                     </Row>
                   </Col>
+                  {/* Right column end */}
                 </Row>
               </Container>
-              {/* Backgrounds */}
-              <BackgroundFilter
-                opacity={0.2}
-                colors={[
-                  'black',
-                  'yellow',
-                  'red',
-                  'purple',
-                  'blue',
-                  'yellow',
-                  'transparent',
-                  'purple',
-                  'orange',
-                  'pink'
-                ]}
-                // animationDuration={30}
-                zIndex={-3}
-              />
-              <BackgroundSlider
-                image={cardsBacground}
-                imageHeight={887}
-                animationDirection="top"
-                // animationDuration={5}
-                zIndex={-4}
-              />
-              <BackgroundSlider
-                image={thingsBackground}
-                imageHeight={992}
-                animationDirection="top"
-                // animationDuration={8}
-                zIndex={-5}
-              />
-              <BackgroundSlider
-                image={mainBackground}
-                imageHeight={1164}
-                animationDirection="top"
-                // animationDuration={15}
-                zIndex={-6}
-                backgroundColor="#111530"
-              />
-              {/* Modals */}
+
+              <Background active={true} />
+
               <CouponModal
                 show={this.state.modalShow}
                 onHide={this.modalClose}
