@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import { ReactComponent as Logo } from '../../images/logo.svg';
 
 const Wrapper = styled.div`
+  position: absolute;
   width: 100%;
   height: 100%;
   background: #111530;
@@ -23,7 +24,7 @@ const spinKeyframes = keyframes`
 const SpinningBlock = styled.div`
   width: 320px;
   transform: rotate(0deg);
-  animation: ${spinKeyframes} 3s linear infinite;
+  animation: ${spinKeyframes} 10s linear infinite;
 `;
 
 const Loadingpage = () => {

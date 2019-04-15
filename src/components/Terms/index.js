@@ -27,7 +27,7 @@ const TermsButton = styled.button`
   top: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-100%);
-  padding: 0.25rem 2rem;
+  padding: 0.2rem 2rem 0.1rem;
   border: 2px solid #837bc8;
   /* border-bottom: none; */
   border-top-left-radius: 5px;

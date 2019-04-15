@@ -10,6 +10,7 @@ const App = () => (
     <AppProvider>
       <Homepage />
     </AppProvider>
+
     <Placeholder>
       <Loadingpage />
     </Placeholder>
