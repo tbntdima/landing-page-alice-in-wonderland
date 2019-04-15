@@ -34,7 +34,7 @@ const characters = [
     id: 3,
     name: 'Alice',
     image: alice,
-    bonus: '',
+    bonus: '230% Bonus',
     couponCode: '',
     deposit: ''
   },

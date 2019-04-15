@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const floating = ({ translateX, translateY, rotateZ }) => {
@@ -26,26 +26,34 @@ const FloatingWrapper = styled.div`
   cursor: pointer;
 `;
 
-const Character = ({
-  name,
-  image,
-  animationDuration = 0,
-  translateX,
-  translateY,
-  rotateZ,
-  onClick
-}) => {
-  return (
-    <FloatingWrapper
-      translateX={translateX}
-      translateY={translateY}
-      rotateZ={rotateZ}
-      animationDuration={animationDuration}
-      onClick={onClick}
-    >
-      <img src={image} alt={name} />
-    </FloatingWrapper>
-  );
-};
+class Character extends Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+
+  render() {
+    const {
+      name,
+      image,
+      animationDuration = 0,
+      translateX,
+      translateY,
+      rotateZ,
+      onClick
+    } = this.props;
+
+    return (
+      <FloatingWrapper
+        translateX={translateX}
+        translateY={translateY}
+        rotateZ={rotateZ}
+        animationDuration={animationDuration}
+        onClick={onClick}
+      >
+        <img src={image} alt={name} />
+      </FloatingWrapper>
+    );
+  }
+}
 
 export default Character;

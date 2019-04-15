@@ -29,23 +29,19 @@ const getRandomInt = (min, max) => {
 };
 
 class Homepage extends Component {
-  state = {
-    modalShow: false
-  };
-
-  modalShow = () => this.setState({ modalShow: true });
-  modalClose = () => this.setState({ modalShow: false });
-
   render() {
     return (
       <Consumer>
         {({ characters }) => {
-          const whiteRabbit = characters[0];
-          const caterpillar = characters[1];
-          const madHatter = characters[2];
-          const alice = characters[3];
-          const cheshireCat = characters[4];
-          const queenOfHearts = characters[5];
+          const [
+            whiteRabbit,
+            caterpillar,
+            madHatter,
+            alice,
+            cheshireCat,
+            queenOfHearts
+          ] = characters.list;
+
           return (
             <div className="homepage">
               <Container className="homepage__content">
@@ -55,7 +51,11 @@ class Homepage extends Component {
                     <Row className="flex-grow-1 mt-3 mt-md-0">
                       <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--big mx-auto">
                         <Character
-                          onClick={this.modalShow}
+                          onClick={() => {
+                            characters.actions.showSingleCharacter(
+                              queenOfHearts.id
+                            );
+                          }}
                           name={queenOfHearts.name}
                           image={queenOfHearts.image}
                           translateX={getRandomInt(5, 15)}
@@ -68,7 +68,11 @@ class Homepage extends Component {
                     <Row className="flex-grow-1 mt-3 mt-md-0">
                       <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--big mx-auto">
                         <Character
-                          onClick={this.modalShow}
+                          onClick={() => {
+                            characters.actions.showSingleCharacter(
+                              cheshireCat.id
+                            );
+                          }}
                           name={cheshireCat.name}
                           image={cheshireCat.image}
                           translateX={getRandomInt(5, 15)}
@@ -107,7 +111,9 @@ class Homepage extends Component {
                     <Row className="flex-grow-1">
                       <Col className="d-flex justify-content-center  homepage__character--main mx-auto">
                         <Character
-                          onClick={this.modalShow}
+                          onClick={() => {
+                            characters.actions.showSingleCharacter(alice.id);
+                          }}
                           name={alice.name}
                           image={alice.image}
                           translateX={getRandomInt(5, 15)}
@@ -125,7 +131,11 @@ class Homepage extends Component {
                     <Row className="justify-content-center mt-3 mt-md-5">
                       <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--big">
                         <Character
-                          onClick={this.modalShow}
+                          onClick={() => {
+                            characters.actions.showSingleCharacter(
+                              madHatter.id
+                            );
+                          }}
                           name={madHatter.name}
                           image={madHatter.image}
                           translateX={getRandomInt(5, 15)}
@@ -138,7 +148,11 @@ class Homepage extends Component {
                     <Row className="justify-content-center justify-content-md-end mt-3 mt-md-5">
                       <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--small">
                         <Character
-                          onClick={this.modalShow}
+                          onClick={() => {
+                            characters.actions.showSingleCharacter(
+                              caterpillar.id
+                            );
+                          }}
                           name={caterpillar.name}
                           image={caterpillar.image}
                           translateX={getRandomInt(5, 15)}
@@ -151,7 +165,11 @@ class Homepage extends Component {
                     <Row className="justify-content-center mt-3 mt-md-5 mb-4 mb-md-0">
                       <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--small">
                         <Character
-                          onClick={this.modalShow}
+                          onClick={() => {
+                            characters.actions.showSingleCharacter(
+                              whiteRabbit.id
+                            );
+                          }}
                           name={whiteRabbit.name}
                           image={whiteRabbit.image}
                           translateX={getRandomInt(5, 15)}
@@ -169,8 +187,8 @@ class Homepage extends Component {
               <Background active={true} />
 
               <CouponModal
-                show={this.state.modalShow}
-                onHide={this.modalClose}
+                show={characters.showSingleCharacter}
+                onHide={characters.actions.hideSingleCharacter}
               />
             </div>
           );

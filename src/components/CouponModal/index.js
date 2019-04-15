@@ -1,19 +1,31 @@
+// Dependecies
 import React from 'react';
 import { Modal } from 'react-bootstrap';
 
-class MyVerticallyCenteredModal extends React.Component {
+// Context
+import { Consumer } from '../../context/AppContext';
+
+// Styles
+import './index.scss';
+
+class CouponModal extends React.Component {
   render() {
     return (
-      <Modal {...this.props} size="lg" centered>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
-      </Modal>
+      <Consumer>
+        {({ characters }) => {
+          const character = characters.list[characters.currentCharacterId];
+          return (
+            <Modal {...this.props} size="lg" centered>
+              <h1 className="text-white">{character.name}</h1>
+              <h1 className="text-white">{character.bonus}</h1>
+              <h1 className="text-white">{character.couponCode}</h1>
+              <h1 className="text-white">{character.deposit}</h1>
+            </Modal>
+          );
+        }}
+      </Consumer>
     );
   }
 }
 
-export default MyVerticallyCenteredModal;
+export default CouponModal;
