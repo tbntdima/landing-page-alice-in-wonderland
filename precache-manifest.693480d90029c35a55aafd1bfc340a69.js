@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/alice-in-wonderland/static/media/cheshireCat.eb35f868.png"
   },
   {
-    "revision": "c991861c60fe8bf436fc",
-    "url": "/alice-in-wonderland/static/css/main.71a370ae.chunk.css"
+    "revision": "914b12cf6efbd33a7ab4",
+    "url": "/alice-in-wonderland/static/css/main.976b6af6.chunk.css"
   },
   {
     "revision": "00db5345baf265cc5416",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/alice-in-wonderland/static/media/alice.47277c6d.png"
   },
   {
-    "revision": "c991861c60fe8bf436fc",
-    "url": "/alice-in-wonderland/static/js/main.f8bb9ddb.chunk.js"
+    "revision": "914b12cf6efbd33a7ab4",
+    "url": "/alice-in-wonderland/static/js/main.76d1ec06.chunk.js"
   },
   {
     "revision": "d19bc29e5290362e531a25006ca06bdc",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/alice-in-wonderland/static/media/wonderland-logo.6161d900.png"
   },
   {
-    "revision": "cbf6f602fc7fc1b3347160e4519bd143",
+    "revision": "d40330ff7b2b2d670195cedeb77d839f",
     "url": "/alice-in-wonderland/index.html"
   }
 ];
