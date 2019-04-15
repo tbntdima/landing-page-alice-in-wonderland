@@ -1,23 +1,33 @@
 .homepage {
   position: relative;
-  min-height: 100vh;
+  min-height: 105vh;
+  display: flex;
+  justify-content: center;
 
   &__content {
     position: relative;
   }
   &__character {
+    &--main {
+      @media (max-width: 767px) {
+        max-width: 300px;
+      }
+    }
     &--big {
       max-width: 300px;
-      @media (max-width: 768px) {
-        max-width: 100%;
+      @media (max-width: 991px) {
+        max-width: 200px;
+      }
+      @media (max-width: 767px) {
+        max-width: 300px;
       }
     }
     &--small {
       max-width: 200px;
-      @media (max-width: 992px) {
-        max-width: 170px;
+      @media (max-width: 991px) {
+        max-width: 130px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         max-width: 220px;
       }
     }
