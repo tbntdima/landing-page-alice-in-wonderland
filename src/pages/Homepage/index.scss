@@ -1,14 +1,15 @@
 .homepage {
   position: relative;
-  min-height: 105vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-
+  overflow: hidden;
   &__content {
     position: relative;
   }
   &__character {
     &--main {
+      background: url('../../images/light.png') center center / cover no-repeat;
       @media (max-width: 767px) {
         max-width: 300px;
       }

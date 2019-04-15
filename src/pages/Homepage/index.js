@@ -163,7 +163,7 @@ class Homepage extends Component {
                         />
                       </Col>
                     </Row>
-                    <Row className="justify-content-center mt-3 mt-md-5 mb-4 mb-md-0">
+                    <Row className="justify-content-center mt-3 mt-md-5 mb-5 mb-md-0">
                       <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--small">
                         <Character
                           onClick={() => {
@@ -185,14 +185,14 @@ class Homepage extends Component {
                 </Row>
               </Container>
 
-              <Terms />
-
-              <Background active={true} />
-
               <CouponModal
                 show={characters.showSingleCharacter}
                 onHide={characters.actions.hideSingleCharacter}
               />
+
+              <Terms />
+
+              <Background active={true} />
             </div>
           );
         }}
