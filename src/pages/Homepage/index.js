@@ -51,17 +51,17 @@ class Homepage extends Component {
               <Container className="homepage__content">
                 <Row className="flex-column flex-md-row">
                   {/* Left column start */}
-                  <Col className="d-flex flex-column order-1 order-md-0">
+                  <Col className="d-block d-md-flex flex-column order-1 order-md-0">
                     <Row className="flex-grow-1 mt-3 mt-md-0">
                       <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--big">
                         <Character
                           onClick={this.modalShow}
                           name={queenOfHearts.name}
                           image={queenOfHearts.image}
-                          translateX={getRandomInt(10, 30)}
-                          translateY={getRandomInt(20, 30)}
-                          rotateZ={getRandomInt(0, 15)}
-                          animationDuration={6}
+                          translateX={getRandomInt(10, 20)}
+                          translateY={getRandomInt(15, 25)}
+                          rotateZ={getRandomInt(4, 10)}
+                          // animationDuration={6}
                         />
                       </Col>
                     </Row>
@@ -71,10 +71,10 @@ class Homepage extends Component {
                           onClick={this.modalShow}
                           name={cheshireCat.name}
                           image={cheshireCat.image}
-                          translateX={getRandomInt(10, 30)}
-                          translateY={getRandomInt(20, 30)}
-                          rotateZ={getRandomInt(0, 15)}
-                          animationDuration={6}
+                          translateX={getRandomInt(10, 20)}
+                          translateY={getRandomInt(15, 25)}
+                          rotateZ={getRandomInt(4, 10)}
+                          // animationDuration={6}
                         />
                       </Col>
                     </Row>
@@ -82,7 +82,7 @@ class Homepage extends Component {
                   {/* Left column end */}
 
                   {/* Center column start */}
-                  <Col className="d-flex flex-column order-0 order-md-1">
+                  <Col className="d-block d-md-flex flex-column order-0 order-md-1 mt-3 mt-md-0">
                     <Row className="flex-grow-1">
                       <Col className="d-flex flex-column justify-content-center align-items-center">
                         <a
@@ -114,10 +114,10 @@ class Homepage extends Component {
                           onClick={this.modalShow}
                           name={alice.name}
                           image={alice.image}
-                          translateX={getRandomInt(10, 30)}
-                          translateY={getRandomInt(20, 30)}
-                          rotateZ={getRandomInt(0, 15)}
-                          animationDuration={6}
+                          translateX={getRandomInt(10, 20)}
+                          translateY={getRandomInt(15, 25)}
+                          rotateZ={getRandomInt(4, 10)}
+                          // animationDuration={6}
                         />
                       </Col>
                     </Row>
@@ -125,30 +125,30 @@ class Homepage extends Component {
                   {/* Center column end */}
 
                   {/* Right column start */}
-                  <Col className="d-flex flex-column justify-content-between order-2">
+                  <Col className="d-block d-md-flex flex-column justify-content-between order-2">
                     <Row className="justify-content-center mt-3 mt-md-5">
                       <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--big">
                         <Character
                           onClick={this.modalShow}
                           name={madHatter.name}
                           image={madHatter.image}
-                          translateX={getRandomInt(10, 30)}
-                          translateY={getRandomInt(20, 30)}
-                          rotateZ={getRandomInt(0, 15)}
-                          animationDuration={6}
+                          translateX={getRandomInt(10, 20)}
+                          translateY={getRandomInt(15, 25)}
+                          rotateZ={getRandomInt(4, 10)}
+                          // animationDuration={6}
                         />
                       </Col>
                     </Row>
-                    <Row className="justify-content-end mt-3 mt-md-5">
+                    <Row className="justify-content-center justify-content-md-end mt-3 mt-md-5">
                       <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--small">
                         <Character
                           onClick={this.modalShow}
                           name={caterpillar.name}
                           image={caterpillar.image}
-                          translateX={getRandomInt(10, 30)}
-                          translateY={getRandomInt(20, 30)}
-                          rotateZ={getRandomInt(0, 15)}
-                          animationDuration={6}
+                          translateX={getRandomInt(10, 20)}
+                          translateY={getRandomInt(15, 25)}
+                          rotateZ={getRandomInt(4, 10)}
+                          // animationDuration={6}
                         />
                       </Col>
                     </Row>
@@ -158,10 +158,10 @@ class Homepage extends Component {
                           onClick={this.modalShow}
                           name={whiteRabbit.name}
                           image={whiteRabbit.image}
-                          translateX={getRandomInt(10, 30)}
-                          translateY={getRandomInt(20, 30)}
-                          rotateZ={getRandomInt(0, 15)}
-                          animationDuration={6}
+                          translateX={getRandomInt(10, 20)}
+                          translateY={getRandomInt(15, 25)}
+                          rotateZ={getRandomInt(4, 10)}
+                          // animationDuration={6}
                         />
                       </Col>
                     </Row>
@@ -170,7 +170,7 @@ class Homepage extends Component {
                 </Row>
               </Container>
 
-              <Background active={true} />
+              <Background active={false} />
 
               <CouponModal
                 show={this.state.modalShow}

@@ -20,7 +20,6 @@ const floating = ({ translateX, translateY, rotateZ }) => {
 };
 
 const FloatingWrapper = styled.div`
-  display: inline-block;
   transform-origin: bottom center;
   animation: ${props => floating} ${props => props.animationDuration}s linear
     infinite;
