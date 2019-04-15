@@ -8,6 +8,7 @@ import { Consumer } from '../../context/AppContext';
 // Components
 import Character from '../../components/Character';
 import CouponModal from '../../components/CouponModal';
+import Terms from '../../components/Terms/';
 
 // Layout
 import Background from './Background';
@@ -183,6 +184,8 @@ class Homepage extends Component {
                   {/* Right column end */}
                 </Row>
               </Container>
+
+              <Terms />
 
               <Background active={true} />
 
