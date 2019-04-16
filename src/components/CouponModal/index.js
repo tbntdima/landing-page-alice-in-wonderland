@@ -58,7 +58,7 @@ const glow = keyframes`
 }
 50% {
   opacity: 1;
-  box-shadow: 0px 0px 25px 35px #65b434;
+  box-shadow: 0px 0px 20px 25px #65b434;
 }
 100% {
   opacity: 1;
