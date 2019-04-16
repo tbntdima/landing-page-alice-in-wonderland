@@ -14,7 +14,7 @@ import Terms from '../../components/Terms/';
 import Background from './Background';
 
 // Images
-import casinoLogo from '../../images/logo.svg';
+import casinoLogo from '../../images/logo.png';
 import wonderlandLogo from '../../images/wonderland-logo.png';
 
 // Styles
@@ -98,8 +98,8 @@ class Homepage extends Component {
                             src={casinoLogo}
                             alt="Silver Oak"
                             style={{
-                              width: '100%',
-                              maxWidth: '200px'
+                              width: '100%'
+                              // maxWidth: '150px'
                             }}
                           />
                         </a>

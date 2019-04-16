@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { ReactComponent as Logo } from '../../images/logo.svg';
+import logo from '../../images/logo.png';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -31,7 +31,7 @@ const Loadingpage = () => {
   return (
     <Wrapper>
       <SpinningBlock>
-        <Logo />
+        <img src={logo} alt="logo" />
       </SpinningBlock>
     </Wrapper>
   );
