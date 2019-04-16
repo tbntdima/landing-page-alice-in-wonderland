@@ -191,16 +191,6 @@ class Homepage extends Component {
                   character => character.couponImage
                 )}
               />
-              <ImagesPreloader
-                imagesList={characters.list.map(
-                  character => character.couponCloseButton
-                )}
-              />
-              <ImagesPreloader
-                imagesList={characters.list.map(
-                  character => character.couponCTA
-                )}
-              />
             </div>
           );
         }}
