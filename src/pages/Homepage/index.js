@@ -158,7 +158,7 @@ class Homepage extends Component {
                         />
                       </Col>
                     </Row>
-                    <Row className="justify-content-center mt-3 mt-md-5 mb-5 mb-md-0">
+                    <Row className="justify-content-center mt-3 mt-md-4 mb-5 mb-md-0">
                       <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--small">
                         <Character
                           onClick={() => {
