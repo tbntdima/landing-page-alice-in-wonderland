@@ -102,8 +102,12 @@ class Homepage extends Component {
                         </a>
                         <img src={wonderlandLogo} alt="Alice in wonderland" />
                         <p className="text-white text-center mt-1 mt-md-4 text--accent">
-                          Click on a character to revea your Bonus.
+                          Click on a character to reveal your Bonus.
                         </p>
+                      </Col>
+                    </Row>
+                    <Row className="flex-grow-1">
+                      <Col className="d-flex justify-content-center  homepage__character--main mx-auto">
                         <Character
                           onClick={() => {
                             characters.actions.showSingleCharacter(alice.id);
@@ -140,7 +144,7 @@ class Homepage extends Component {
                       </Col>
                     </Row>
                     <Row className="justify-content-center justify-content-md-end mt-3 mt-md-5">
-                      <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--small">
+                      <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--medium">
                         <Character
                           onClick={() => {
                             characters.actions.showSingleCharacter(

@@ -23,6 +23,15 @@
         max-width: 300px;
       }
     }
+    &--medium {
+      max-width: 225px;
+      @media (max-width: 991px) {
+        max-width: 130px;
+      }
+      @media (max-width: 767px) {
+        max-width: 225px;
+      }
+    }
     &--small {
       max-width: 200px;
       @media (max-width: 991px) {

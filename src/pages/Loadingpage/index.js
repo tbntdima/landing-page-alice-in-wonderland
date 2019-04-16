@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import logo from '../../images/logo.png';
+import logo from '../../images/wonderland-logo.png';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -12,27 +12,29 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const spinKeyframes = keyframes`
-    from {
-        transform: rotate(0deg);
+const fadingInOut = keyframes`
+    0% {
+        opacity: 1;
     }
-    to {
-        transform: rotate(360deg);
+    50% {
+        opacity: .55;
+    }
+    100% {
+      opacity: 1;
     }
 `;
 
-const SpinningBlock = styled.div`
+const FadingBlock = styled.div`
   width: 320px;
-  transform: rotate(0deg);
-  animation: ${spinKeyframes} 10s linear infinite;
+  animation: ${fadingInOut} 3s linear infinite;
 `;
 
 const Loadingpage = () => {
   return (
     <Wrapper>
-      <SpinningBlock>
+      <FadingBlock>
         <img src={logo} alt="logo" />
-      </SpinningBlock>
+      </FadingBlock>
     </Wrapper>
   );
 };

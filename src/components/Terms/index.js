@@ -23,6 +23,7 @@ const TermsContainer = styled.div`
   background: #111530;
   transform: ${props => (props.visible ? 'translateY(0)' : 'translateY(100%)')};
   transition: 0.3s;
+  font-size: 0.8rem;
 `;
 
 const TermsButton = styled.button`
