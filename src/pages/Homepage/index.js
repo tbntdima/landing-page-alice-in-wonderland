@@ -53,12 +53,10 @@ class Homepage extends Component {
                       <Col className="d-flex align-items-center justify-content-center justify-content-md-start homepage__character--big mx-auto">
                         <Character
                           onClick={() => {
-                            characters.actions.showSingleCharacter(
-                              queenOfHearts.id
-                            );
+                            characters.actions.showSingleCharacter(alice.id);
                           }}
-                          name={queenOfHearts.name}
-                          image={queenOfHearts.image}
+                          name={alice.name}
+                          image={alice.image}
                           translateX={getRandomInt(5, 15)}
                           translateY={getRandomInt(5, 15)}
                           rotateZ={getRandomInt(4, 8)}
@@ -89,7 +87,7 @@ class Homepage extends Component {
                   {/* Center column start */}
                   <Col className="d-block d-md-flex flex-column order-0 order-md-1 mt-3">
                     <Row className="flex-grow-1 flex-column">
-                      <Col className="d-flex flex-column justify-content-start align-items-center">
+                      <Col className="text-center">
                         <a href="https://www.silveroakcasino.com/">
                           <img
                             src={casinoLogo}
@@ -104,21 +102,21 @@ class Homepage extends Component {
                         <p className="text-white text-center mt-1 mt-md-4 text--accent">
                           Click on a character to reveal your Bonus.
                         </p>
-                      </Col>
-                    </Row>
-                    <Row className="flex-grow-1">
-                      <Col className="d-flex justify-content-center  homepage__character--main mx-auto">
-                        <Character
-                          onClick={() => {
-                            characters.actions.showSingleCharacter(alice.id);
-                          }}
-                          name={alice.name}
-                          image={alice.image}
-                          translateX={getRandomInt(5, 15)}
-                          translateY={getRandomInt(5, 15)}
-                          rotateZ={getRandomInt(4, 8)}
-                          animationDuration={6}
-                        />
+                        <div className="f-flex justify-content-center  homepage__character--main mx-auto mt-0 mt-md-5">
+                          <Character
+                            onClick={() => {
+                              characters.actions.showSingleCharacter(
+                                madHatter.id
+                              );
+                            }}
+                            name={madHatter.name}
+                            image={madHatter.image}
+                            translateX={getRandomInt(5, 15)}
+                            translateY={getRandomInt(5, 15)}
+                            rotateZ={getRandomInt(4, 8)}
+                            animationDuration={6}
+                          />
+                        </div>
                       </Col>
                     </Row>
                   </Col>
@@ -131,11 +129,11 @@ class Homepage extends Component {
                         <Character
                           onClick={() => {
                             characters.actions.showSingleCharacter(
-                              madHatter.id
+                              queenOfHearts.id
                             );
                           }}
-                          name={madHatter.name}
-                          image={madHatter.image}
+                          name={queenOfHearts.name}
+                          image={queenOfHearts.image}
                           translateX={getRandomInt(5, 15)}
                           translateY={getRandomInt(5, 15)}
                           rotateZ={getRandomInt(4, 8)}

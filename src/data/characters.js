@@ -19,6 +19,13 @@ import aliceCouponCloseButton from '../images/coupons/alice-close.png';
 import cheshireCatCouponCloseButton from '../images/coupons/cheshireCat-close.png';
 import queenOfHeartsCouponCloseButton from '../images/coupons/queenOfHearts-close.png';
 
+import whiteRabbitCouponCTA from '../images/coupons/whiteRabbit-cta.png';
+import caterpillarCouponCTA from '../images/coupons/caterpillar-cta.png';
+import madHatterCouponCTA from '../images/coupons/madHatter-cta.png';
+import aliceCouponCTA from '../images/coupons/alice-cta.png';
+import cheshireCatCouponCTA from '../images/coupons/cheshireCat-cta.png';
+import queenOfHeartsCouponCTA from '../images/coupons/queenOfHearts-cta.png';
+
 const casinoUrl = 'https://www.silveroakcasino.com/';
 
 const characters = [
@@ -29,6 +36,7 @@ const characters = [
     couponCode: 'WHITERABBIT',
     couponImage: whiteRabbitCoupon,
     couponCloseButton: whiteRabbitCouponCloseButton,
+    couponCTA: whiteRabbitCouponCTA,
     couponUrl: `${casinoUrl}?cashier&coupon=WHITERABBIT`
   },
   {
@@ -38,6 +46,7 @@ const characters = [
     couponCode: 'CATERPILLAR',
     couponImage: caterpillarCoupon,
     couponCloseButton: caterpillarCouponCloseButton,
+    couponCTA: caterpillarCouponCTA,
     couponUrl: `${casinoUrl}?cashier&coupon=CATERPILLAR`
   },
   {
@@ -47,6 +56,7 @@ const characters = [
     couponCode: 'MADHATTER',
     couponImage: madHatterCoupon,
     couponCloseButton: madHatterCouponCloseButton,
+    couponCTA: madHatterCouponCTA,
     couponUrl: `${casinoUrl}?cashier&coupon=MADHATTER`
   },
   {
@@ -56,6 +66,7 @@ const characters = [
     couponCode: 'ALICE',
     couponImage: aliceCoupon,
     couponCloseButton: aliceCouponCloseButton,
+    couponCTA: aliceCouponCTA,
     couponUrl: `${casinoUrl}?cashier&coupon=ALICE`
   },
   {
@@ -65,6 +76,7 @@ const characters = [
     couponCode: 'CHESHIRECAT',
     couponImage: cheshireCatCoupon,
     couponCloseButton: cheshireCatCouponCloseButton,
+    couponCTA: cheshireCatCouponCTA,
     couponUrl: `${casinoUrl}?cashier&coupon=CHESHIRECAT`
   },
   {
@@ -74,6 +86,7 @@ const characters = [
     couponCode: 'HEARTS375',
     couponImage: queenOfHeartsCoupon,
     couponCloseButton: queenOfHeartsCouponCloseButton,
+    couponCTA: queenOfHeartsCouponCTA,
     couponUrl: `${casinoUrl}?cashier&coupon=HEARTS375`
   }
 ];
