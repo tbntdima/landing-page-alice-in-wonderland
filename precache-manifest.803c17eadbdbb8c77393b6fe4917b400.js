@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "d8a88523cef6d03d2b2ae7b06a31b8c6",
-    "url": "/alice-in-wonderland/static/media/alice.d8a88523.png"
+    "revision": "551f396c977f4447f463acc8c0904f0e",
+    "url": "/alice-in-wonderland/static/media/caterpillar-close.551f396c.png"
   },
   {
-    "revision": "7f411d44d1b65b9655a3",
+    "revision": "bfd670232f05515bbaf1",
     "url": "/alice-in-wonderland/static/css/main.ac6ce8a6.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/alice-in-wonderland/static/js/runtime~main.503df334.js"
   },
   {
-    "revision": "74f82d3c27a8a61f57d5",
-    "url": "/alice-in-wonderland/static/js/2.235b9e38.chunk.js"
+    "revision": "87984351d22d42ad2309",
+    "url": "/alice-in-wonderland/static/js/2.67bdf336.chunk.js"
   },
   {
     "revision": "6161d90025c5403d80e1b7d3a66dd82d",
@@ -44,32 +44,32 @@ self.__precacheManifest = [
     "url": "/alice-in-wonderland/static/media/queenOfHearts.77ebd61a.png"
   },
   {
-    "revision": "6bf94b52955d35b14db79319f662b8c8",
-    "url": "/alice-in-wonderland/static/media/whiteRabbit.6bf94b52.png"
+    "revision": "cab0d45775838c01f76501981a9b8a34",
+    "url": "/alice-in-wonderland/static/media/whiteRabbit.cab0d457.png"
   },
   {
-    "revision": "7c5d364b308b440a9747eab5286f3289",
-    "url": "/alice-in-wonderland/static/media/caterpillar.7c5d364b.png"
+    "revision": "4802086029b4952007f051004f84f1db",
+    "url": "/alice-in-wonderland/static/media/caterpillar.48020860.png"
   },
   {
-    "revision": "09b26f3b9807de65bf73e706754506ea",
-    "url": "/alice-in-wonderland/static/media/madHatter.09b26f3b.png"
+    "revision": "9dd0b32db9cbc8c12fc7f136063bc1d7",
+    "url": "/alice-in-wonderland/static/media/madHatter.9dd0b32d.png"
   },
   {
-    "revision": "7f411d44d1b65b9655a3",
-    "url": "/alice-in-wonderland/static/js/main.43e22088.chunk.js"
+    "revision": "0f8dc99c393d0976ad7d7569da467801",
+    "url": "/alice-in-wonderland/static/media/alice.0f8dc99c.png"
   },
   {
-    "revision": "078d166a32ef86a929a1dba19dd864a0",
-    "url": "/alice-in-wonderland/static/media/cheshireCat.078d166a.png"
+    "revision": "f4227dd81ca0dd8467652d294fcaeb9d",
+    "url": "/alice-in-wonderland/static/media/cheshireCat.f4227dd8.png"
   },
   {
-    "revision": "3cc83d16d0172fc6dd6a031397d22915",
-    "url": "/alice-in-wonderland/static/media/queenOfHearts.3cc83d16.png"
+    "revision": "7f0f57f8993186785109834c01cc521d",
+    "url": "/alice-in-wonderland/static/media/queenOfHearts.7f0f57f8.png"
   },
   {
-    "revision": "551f396c977f4447f463acc8c0904f0e",
-    "url": "/alice-in-wonderland/static/media/caterpillar-close.551f396c.png"
+    "revision": "bfd670232f05515bbaf1",
+    "url": "/alice-in-wonderland/static/js/main.f7f6809f.chunk.js"
   },
   {
     "revision": "130dc6271e6651f9b88b0c4fc1b12129",
@@ -86,6 +86,30 @@ self.__precacheManifest = [
   {
     "revision": "239bacb92c7c577e36969878e7fdd3df",
     "url": "/alice-in-wonderland/static/media/queenOfHearts-close.239bacb9.png"
+  },
+  {
+    "revision": "c213974aadf163b3bdcde3858bfc39ca",
+    "url": "/alice-in-wonderland/static/media/whiteRabbit-cta.c213974a.png"
+  },
+  {
+    "revision": "722924fc6fac57a3341ec2d93795e6b8",
+    "url": "/alice-in-wonderland/static/media/caterpillar-cta.722924fc.png"
+  },
+  {
+    "revision": "c4f33cfa9eb33273ade63b56ef9aee53",
+    "url": "/alice-in-wonderland/static/media/madHatter-cta.c4f33cfa.png"
+  },
+  {
+    "revision": "8e882e3851b3ecab4c98daf316cb9712",
+    "url": "/alice-in-wonderland/static/media/alice-cta.8e882e38.png"
+  },
+  {
+    "revision": "3b6271a6a8c271d9a235eeedc0bc60be",
+    "url": "/alice-in-wonderland/static/media/cheshireCat-cta.3b6271a6.png"
+  },
+  {
+    "revision": "6b5587bc826d17bdb5362ab9494696bb",
+    "url": "/alice-in-wonderland/static/media/queenOfHearts-cta.6b5587bc.png"
   },
   {
     "revision": "9169ac38555c33174035ba1a65ff8c00",
@@ -108,7 +132,7 @@ self.__precacheManifest = [
     "url": "/alice-in-wonderland/static/media/light.bd1394db.png"
   },
   {
-    "revision": "912cd9ba27abefe7d13c78fe27d5e5ae",
+    "revision": "80674994ae3b4533f68f798fa5c5ab9a",
     "url": "/alice-in-wonderland/index.html"
   }
 ];
