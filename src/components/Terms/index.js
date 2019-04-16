@@ -11,6 +11,9 @@ import { Consumer } from '../../context/AppContext';
 // Data
 import termsText from '../../data/terms';
 
+// Images
+import background from './images/background.png';
+
 const TermsContainer = styled.div`
   position: absolute;
   bottom: 0;
@@ -32,7 +35,7 @@ const TermsButton = styled.button`
   /* border-bottom: none; */
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background: black;
+  background: url(${background}) center center / cover no-repeat;
   &:focus,
   &:active {
     outline: none;
