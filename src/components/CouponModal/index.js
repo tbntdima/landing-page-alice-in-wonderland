@@ -53,24 +53,30 @@ const CTA = styled.a`
 
 const glow = keyframes`
 0% {
-  box-shadow: 0px 0px 25px 30px #65b434;
+  opacity: 1;
+  box-shadow: 0px 0px 25px 0 #65b434;
 }
 50% {
-  box-shadow: 0px 0px 25px 5px #65b434;
+  opacity: 1;
+  box-shadow: 0px 0px 25px 35px #65b434;
 }
 100% {
-  box-shadow: 0px 0px 25px 30px #65b434;
+  opacity: 1;
+  box-shadow: 0px 0px 25px 0 #65b434;
 }
 `;
 const glowSmall = keyframes`
 0% {
-  box-shadow: 0px 0px 15px 18px #65b434;
-}
-50% {
+  opacity: 1;
   box-shadow: 0px 0px 15px 5px #65b434;
 }
-100% {
+50% {
+  opacity: 1;
   box-shadow: 0px 0px 15px 18px #65b434;
+}
+100% {
+  opacity: 1;
+  box-shadow: 0px 0px 15px 5px #65b434;
 }
 `;
 const CRAGlow = styled.div`
@@ -82,15 +88,16 @@ const CRAGlow = styled.div`
   width: 244px;
   height: 63px;
   border-radius: 25px;
-  box-shadow: 0px 0px 20px 30px #65b434;
+  box-shadow: 0px 0px 25px 0 #65b434;
   z-index: 1;
-  animation: ${glow} 2s infinite;
+  opacity: 0;
+  animation: ${glow} 2s linear 1.25s infinite;
   @media (max-width: 576px) {
-    width: 35vw;
-    height: 15vw;
+    width: 38vw;
+    height: 14vw;
     left: ${props => (props.exception ? '48%' : '50%')};
-    box-shadow: 0px 0px 15px 18px #65b434;
-    animation: ${glowSmall} 2s infinite;
+    box-shadow: 0px 0px 15px 5px #65b434;
+    animation: ${glowSmall} 2s linear 1.25s infinite;
   }
 `;
 
@@ -110,7 +117,7 @@ class CouponModal extends React.Component {
                 ctaImage={character.couponCTA}
                 exception={character.name === 'White Rabbit'}
               />
-              <CRAGlow />
+              <CRAGlow exception={character.name === 'White Rabbit'} />
               <CloseButton
                 backgroundImage={character.couponCloseButton}
                 exception={character.name === 'White Rabbit'}
