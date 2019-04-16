@@ -87,13 +87,10 @@ class Homepage extends Component {
                   {/* Left column end */}
 
                   {/* Center column start */}
-                  <Col className="d-block d-md-flex flex-column order-0 order-md-1 mt-3 mt-md-0">
-                    <Row className="flex-grow-1">
-                      <Col className="d-flex flex-column justify-content-center align-items-center">
-                        <a
-                          className="mb-2"
-                          href="https://www.silveroakcasino.com/"
-                        >
+                  <Col className="d-block d-md-flex flex-column order-0 order-md-1 mt-3">
+                    <Row className="flex-grow-1 flex-column">
+                      <Col className="d-flex flex-column justify-content-start align-items-center">
+                        <a href="https://www.silveroakcasino.com/">
                           <img
                             src={casinoLogo}
                             alt="Silver Oak"
@@ -107,10 +104,6 @@ class Homepage extends Component {
                         <p className="text-white text-center mt-1 mt-md-4 text--accent">
                           Click on a character to revea your Bonus.
                         </p>
-                      </Col>
-                    </Row>
-                    <Row className="flex-grow-1">
-                      <Col className="d-flex justify-content-center  homepage__character--main mx-auto">
                         <Character
                           onClick={() => {
                             characters.actions.showSingleCharacter(alice.id);

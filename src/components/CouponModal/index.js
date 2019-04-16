@@ -11,19 +11,24 @@ import './index.scss';
 
 const CloseButton = styled.button`
   position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 60px;
-  height: 60px;
-  background: black;
+  top: ${props => (props.exception ? '-7px' : 0)};
+  right: ${props => (props.exception ? '22px' : 0)};
+  width: 118px;
+  height: 118px;
+  padding: 0;
+  background: url(${props => props.backgroundImage}) center center / cover
+    no-repeat;
   border: none;
-  border-radius: 50%;
   outline: none;
+  &:active,
+  &:focus {
+    outline: none;
+  }
   @media (max-width: 576px) {
-    top: 7vw;
-    right: 5vw;
-    width: 10vw;
-    height: 10vw;
+    top: 0;
+    right: ${props => (props.exception ? '5vw' : 0)};
+    width: 20vw;
+    height: 20vw;
   }
 `;
 
@@ -38,7 +43,11 @@ class CouponModal extends React.Component {
               <a href={character.couponUrl}>
                 <img src={character.couponImage} alt={character.name} />
               </a>
-              <CloseButton onClick={characters.actions.hideSingleCharacter} />
+              <CloseButton
+                backgroundImage={character.couponCloseButton}
+                exception={character.name === 'White Rabbit'}
+                onClick={characters.actions.hideSingleCharacter}
+              />
             </Modal>
           );
         }}

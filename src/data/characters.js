@@ -12,6 +12,13 @@ import aliceCoupon from '../images/coupons/alice.png';
 import cheshireCatCoupon from '../images/coupons/cheshireCat.png';
 import queenOfHeartsCoupon from '../images/coupons/queenOfHearts.png';
 
+import whiteRabbitCouponCloseButton from '../images/coupons/whiteRabbit-close.png';
+import caterpillarCouponCloseButton from '../images/coupons/caterpillar-close.png';
+import madHatterCouponCloseButton from '../images/coupons/madHatter-close.png';
+import aliceCouponCloseButton from '../images/coupons/alice-close.png';
+import cheshireCatCouponCloseButton from '../images/coupons/cheshireCat-close.png';
+import queenOfHeartsCouponCloseButton from '../images/coupons/queenOfHearts-close.png';
+
 const characters = [
   {
     id: 0,
@@ -21,6 +28,7 @@ const characters = [
     couponCode: '',
     deposit: '',
     couponImage: whiteRabbitCoupon,
+    couponCloseButton: whiteRabbitCouponCloseButton,
     couponUrl: 'someurl'
   },
   {
@@ -31,6 +39,7 @@ const characters = [
     couponCode: '',
     deposit: '',
     couponImage: caterpillarCoupon,
+    couponCloseButton: caterpillarCouponCloseButton,
     couponUrl: 'someurl'
   },
   {
@@ -41,6 +50,7 @@ const characters = [
     couponCode: 'MADHATTER',
     deposit: '$50',
     couponImage: madHatterCoupon,
+    couponCloseButton: madHatterCouponCloseButton,
     couponUrl: 'someurl'
   },
   {
@@ -51,6 +61,7 @@ const characters = [
     couponCode: '',
     deposit: '',
     couponImage: aliceCoupon,
+    couponCloseButton: aliceCouponCloseButton,
     couponUrl: 'someurl'
   },
   {
@@ -61,6 +72,7 @@ const characters = [
     couponCode: '',
     deposit: '',
     couponImage: cheshireCatCoupon,
+    couponCloseButton: cheshireCatCouponCloseButton,
     couponUrl: 'someurl'
   },
   {
@@ -71,6 +83,7 @@ const characters = [
     couponCode: '',
     deposit: '',
     couponImage: queenOfHeartsCoupon,
+    couponCloseButton: queenOfHeartsCouponCloseButton,
     couponUrl: 'someurl'
   }
 ];
