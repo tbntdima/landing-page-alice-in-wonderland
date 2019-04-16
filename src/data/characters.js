@@ -19,72 +19,62 @@ import aliceCouponCloseButton from '../images/coupons/alice-close.png';
 import cheshireCatCouponCloseButton from '../images/coupons/cheshireCat-close.png';
 import queenOfHeartsCouponCloseButton from '../images/coupons/queenOfHearts-close.png';
 
+const casinoUrl = 'https://www.silveroakcasino.com/';
+
 const characters = [
   {
     id: 0,
     name: 'White Rabbit',
     image: whiteRabbit,
-    bonus: '350% Bonus',
-    couponCode: '',
-    deposit: '',
+    couponCode: 'WHITERABBIT',
     couponImage: whiteRabbitCoupon,
     couponCloseButton: whiteRabbitCouponCloseButton,
-    couponUrl: 'someurl'
+    couponUrl: `${casinoUrl}?cashier&coupon=WHITERABBIT`
   },
   {
     id: 1,
     name: 'Caterpillar',
     image: caterpillar,
-    bonus: '250% Bonus',
-    couponCode: '',
-    deposit: '',
+    couponCode: 'CATERPILLAR',
     couponImage: caterpillarCoupon,
     couponCloseButton: caterpillarCouponCloseButton,
-    couponUrl: 'someurl'
+    couponUrl: `${casinoUrl}?cashier&coupon=CATERPILLAR`
   },
   {
     id: 2,
     name: 'Mad Hatter',
     image: madHatter,
-    bonus: '222% No Rules Bonus',
     couponCode: 'MADHATTER',
-    deposit: '$50',
     couponImage: madHatterCoupon,
     couponCloseButton: madHatterCouponCloseButton,
-    couponUrl: 'someurl'
+    couponUrl: `${casinoUrl}?cashier&coupon=MADHATTER`
   },
   {
     id: 3,
     name: 'Alice',
     image: alice,
-    bonus: '230% Bonus',
-    couponCode: '',
-    deposit: '',
+    couponCode: 'ALICE',
     couponImage: aliceCoupon,
     couponCloseButton: aliceCouponCloseButton,
-    couponUrl: 'someurl'
+    couponUrl: `${casinoUrl}?cashier&coupon=ALICE`
   },
   {
     id: 4,
     name: 'Cheshire Cat',
     image: cheshireCat,
-    bonus: '300% Bonus',
-    couponCode: '',
-    deposit: '',
+    couponCode: 'CHESHIRECAT',
     couponImage: cheshireCatCoupon,
     couponCloseButton: cheshireCatCouponCloseButton,
-    couponUrl: 'someurl'
+    couponUrl: `${casinoUrl}?cashier&coupon=CHESHIRECAT`
   },
   {
     id: 5,
     name: 'Queen of Hearts',
     image: queenOfHearts,
-    bonus: '375 Bonus',
-    couponCode: '',
-    deposit: '',
+    couponCode: 'HEARTS375',
     couponImage: queenOfHeartsCoupon,
     couponCloseButton: queenOfHeartsCouponCloseButton,
-    couponUrl: 'someurl'
+    couponUrl: `${casinoUrl}?cashier&coupon=HEARTS375`
   }
 ];
 
