@@ -95,8 +95,8 @@ class Homepage extends Component {
                             src={casinoLogo}
                             alt="Silver Oak"
                             style={{
-                              width: '100%'
-                              // maxWidth: '150px'
+                              width: '100%',
+                              maxWidth: '175px'
                             }}
                           />
                         </a>
