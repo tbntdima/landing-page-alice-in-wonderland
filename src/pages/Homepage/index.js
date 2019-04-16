@@ -9,6 +9,7 @@ import { Consumer } from '../../context/AppContext';
 import Character from '../../components/Character';
 import CouponModal from '../../components/CouponModal';
 import Terms from '../../components/Terms/';
+import ImagesPreloader from '../../components/ImagesPreloader';
 
 // Layout
 import Background from './Background';
@@ -179,15 +180,17 @@ class Homepage extends Component {
                   {/* Right column end */}
                 </Row>
               </Container>
-
               <CouponModal
                 show={characters.showSingleCharacter}
                 onHide={characters.actions.hideSingleCharacter}
               />
-
               <Terms />
-
               <Background active={true} />
+              <ImagesPreloader
+                imagesList={characters.list.map(
+                  character => character.couponImage
+                )}
+              />
             </div>
           );
         }}
