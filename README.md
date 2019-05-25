@@ -1,5 +1,13 @@
-#Alice In Wonderlan
+# React based landing page/interactive game
 
-##Stack
+live demo at: [https://dmitriyaa.github.io/react-alice-in-wonderland/](https://dmitriyaa.github.io/react-alice-in-wonderland/)
 
-- Context API
+## Development
+
+`yarn`
+
+- development: `yarn start`
+
+- build: `yarn build`
+
+- deploy to github pages: `yarn deploy`
