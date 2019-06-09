@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5688ceed4f6e300b2f17",
+    "revision": "3a144edb181d1772d469",
     "url": "/react-alice-in-wonderland/static/css/main.06a80274.chunk.css"
   },
   {
-    "revision": "5688ceed4f6e300b2f17",
-    "url": "/react-alice-in-wonderland/static/js/main.f44cf4f2.chunk.js"
+    "revision": "3a144edb181d1772d469",
+    "url": "/react-alice-in-wonderland/static/js/main.67e565de.chunk.js"
   },
   {
     "revision": "452d3d516fc2f219239a",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/react-alice-in-wonderland/static/media/light.bd1394db.png"
   },
   {
-    "revision": "30e74d4d381dccc821fa2079f75b2dea",
+    "revision": "841048cbebb552a4b3139eca2dd72e83",
     "url": "/react-alice-in-wonderland/index.html"
   }
 ];
