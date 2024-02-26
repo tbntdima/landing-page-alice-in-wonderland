@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react-alice-in-wonderland/precache-manifest.0c4a4fcc96709cc3455cb68ca77c4a34.js"
+  "/landing-page-alice-in-wonderland/precache-manifest.4a9288f08ce503142125de595fdd9786.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/react-alice-in-wonderland/index.html", {
+workbox.routing.registerNavigationRoute("/landing-page-alice-in-wonderland/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
